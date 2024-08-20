@@ -1,6 +1,4 @@
-Sure! Here's a sample `README.md` for installing and configuring NTP:
 
-```markdown
 # NTP Installation and Configuration
 
 This guide provides instructions for installing and configuring the Network Time Protocol (NTP) service to synchronize the time between devices.
@@ -34,18 +32,6 @@ This guide provides instructions for installing and configuring the Network Time
 
     ```bash
     sudo apt install ntp
-    ```
-
-### Red Hat-based Systems (e.g., CentOS, Fedora)
-
-1. Install the NTP package:
-
-    ```bash
-    sudo yum install ntp
-    ```
-    or
-    ```bash
-    sudo dnf install ntp
     ```
 
 ## Configuration
