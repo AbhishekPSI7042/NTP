@@ -68,20 +68,6 @@ This guide provides instructions for installing and configuring the Network Time
     sudo systemctl enable ntp
     ```
 
-### Red Hat-based Systems
-
-1. Start the NTP service:
-
-    ```bash
-    sudo systemctl start ntpd
-    ```
-
-2. Enable NTP to start on boot:
-
-    ```bash
-    sudo systemctl enable ntpd
-    ```
-
 ## Verification
 
 To verify that your device is synchronizing correctly with the NTP server, use the following command:
@@ -92,29 +78,6 @@ ntpq -p
 
 This will display a list of NTP servers and their synchronization status.
 
-## Firewall Configuration
-
-If you have a firewall enabled, ensure that NTP traffic is allowed:
-
-### Using `ufw` (Uncomplicated Firewall)
-
-```bash
-sudo ufw allow 123/udp
-```
-
-### Using `firewalld`
-
-1. Allow NTP service:
-
-    ```bash
-    sudo firewall-cmd --permanent --add-service=ntp
-    ```
-
-2. Reload firewall settings:
-
-    ```bash
-    sudo firewall-cmd --reload
-    ```
 
 ## Troubleshooting
 
@@ -123,9 +86,3 @@ sudo ufw allow 123/udp
 
 For further assistance, consult the [NTP documentation](https://www.ntp.org/documentation.html) or seek help from your system administrator.
 
----
-
-Feel free to contribute to this document or report any issues. For more information, visit the [GitHub repository](https://github.com/your-repository-link).
-```
-
-You can replace `your-repository-link` with the actual link to your GitHub repository. This template provides a clear and concise guide for users to install and configure NTP on their systems.
